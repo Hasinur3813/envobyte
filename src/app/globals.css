@@ -3,6 +3,18 @@
 @import "tailwindcss";
 
 @theme {
+  /* font-family */
   --font-raleway: "Raleway", sans-serif;
   --font-inter: "Inter", sans-serif;
+
+  /* color platte */
+  --color-primary: #001655;
+  --color-secondary: #3158c733;
+  --color-link: #0c89ff;
+  --color-accent: #ff693b;
+  --color-light: #ffffff;
+}
+
+[aria-current="active"] {
+  color: theme("colors.accent");
 }
