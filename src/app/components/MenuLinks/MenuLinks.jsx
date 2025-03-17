@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 const MenuLinks = ({ visibleMenu }) => {
   const pathname = usePathname();
   return (
-    <ul className="hidden md:flex justify-center items-center gap-10 font-inter">
+    <ul className="hidden lg:flex justify-center items-center gap-10 font-inter">
       <li>
         <Link
           className="text-light font-semibold text-base leading-5 hover:text-accent transition-colors duration-200"

@@ -26,14 +26,14 @@ const Navbar = () => {
 
           {/* pricing button */}
 
-          <PrimaryButton className="hidden md:block">See Pricing</PrimaryButton>
+          <PrimaryButton className="hidden lg:block">See Pricing</PrimaryButton>
 
           {/* navbar end */}
 
           <button
             onClick={showMenu}
             type="button"
-            className="md:hidden p-2 rounded-md cursor-pointer bg-accent text-white transition-all duration-300 hover:bg-accent/80 "
+            className="lg:hidden p-2 rounded-md cursor-pointer bg-accent text-white transition-all duration-300 hover:bg-accent/80 "
           >
             <HiMenuAlt2 size={30} />
           </button>

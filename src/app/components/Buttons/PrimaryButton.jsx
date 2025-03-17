@@ -1,4 +1,4 @@
-import React from "react";
+"use client";
 
 const PrimaryButton = ({ className, children }) => {
   return (
