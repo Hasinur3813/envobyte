@@ -6,6 +6,8 @@ import HeroStats from "../HeroStats/HeroStats";
 const HeroArea = () => {
   return (
     <div className="bg-primary relative">
+      {/* glowing effect */}
+      <div className="absolute  w-[300px] h-[300px] bg-[#0A3CCA99] rounded-full blur-3xl -bottom-40 right-0  "></div>
       {/* trapezoidal  effect */}
       <div
         className="absolute inset-0 w-full h-screen bg-gradient-to-b from-primary via-[#073082] to-black shadow-[0_0_50px_rgba(0,0,255,0.7)]"

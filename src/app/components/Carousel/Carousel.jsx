@@ -81,6 +81,9 @@ const Carousel = () => {
 
   return (
     <div className="relative container px-4 mx-auto">
+      {/* glowing effect 1 */}
+      <div className="absolute  w-[600px] h-[400px] bg-[#0A3CCA99] rounded-full blur-3xl bottom-8 left-2/6  "></div>
+
       <Swiper
         ref={swiperRef}
         modules={[Navigation, Autoplay]}
@@ -104,7 +107,7 @@ const Carousel = () => {
               <img
                 src={slide.image}
                 alt={slide.title}
-                className="w-[150px] h-[150px] object-cover"
+                className="w-[150px] h-[150px] object-contain"
               />
               <h5 className="font-semibold text-2xl text-light leading-10">
                 {slide.title}

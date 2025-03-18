@@ -4,7 +4,7 @@ import Carousel from "../Carousel/Carousel";
 
 const Services = () => {
   return (
-    <section className="bg-primary     ">
+    <section className="bg-primary ">
       <div className="container mx-auto px-4">
         {/* top content */}
         <div className="flex justify-between items-center">
@@ -16,14 +16,14 @@ const Services = () => {
               Check Our Available Services
             </h3>
           </div>
-          <PrimaryButton>All Services</PrimaryButton>
+          <PrimaryButton className="relative z-10">All Services</PrimaryButton>
         </div>
         {/* horizontal line */}
         <div className="w-full h-[2px] bg-light opacity-40 my-8 rounded-md"></div>
 
         {/* services menu */}
         <div className="pb-20">
-          <ul className="flex items-center space-x-10 pb-16 flex-wrap leading-8">
+          <ul className="flex items-center space-x-3 sm:space-x-5 md:space-x-10 pb-16 flex-wrap leading-8">
             <li>
               <button
                 className="text-light uppercase font-inter text-base leading-5 hover:text-[#0C89FF] cursor-pointer font-bold "
