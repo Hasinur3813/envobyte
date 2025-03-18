@@ -78,7 +78,7 @@ const DetailsSection = () => {
         <img
           src="/images/vector2.png"
           alt="vector-img"
-          className="absolute top-14"
+          className="absolute top-14 w-full"
         />
       </div>
     </section>
