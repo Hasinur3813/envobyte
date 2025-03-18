@@ -1,3 +1,4 @@
+import DetailsSection from "./components/DetailsSection/DetailsSection";
 import HeroArea from "./components/HeroArea/HeroArea";
 import Services from "./components/Services/Services";
 
@@ -6,6 +7,7 @@ const Page = () => {
     <div>
       <HeroArea />
       <Services />
+      <DetailsSection />
     </div>
   );
 };

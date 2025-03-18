@@ -4,7 +4,12 @@ import Carousel from "../Carousel/Carousel";
 
 const Services = () => {
   return (
-    <section className="bg-primary ">
+    <section className="bg-primary relative">
+      <img
+        src="/images/services-bg.png"
+        alt="background"
+        className="absolute bottom-0 h-64"
+      />
       <div className="container mx-auto px-4">
         {/* top content */}
         <div className="flex justify-between items-center">
@@ -76,6 +81,12 @@ const Services = () => {
 
           {/* services content */}
           <Carousel />
+          <div className="flex justify-end items-center mt-16 gap-4">
+            <p className="font-semibold text-sm tracking-widest text-light ">
+              CREATIVE SOLUTION
+            </p>
+            <span className="inline-block w-14 h-1 bg-light rounded-md opacity-50"></span>
+          </div>
         </div>
       </div>
     </section>
