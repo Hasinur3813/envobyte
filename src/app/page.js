@@ -1,5 +1,7 @@
 import DetailsSection from "./components/DetailsSection/DetailsSection";
 import HeroArea from "./components/HeroArea/HeroArea";
+import HowWeWork from "./components/HowWeWork/HowWeWork";
+import PortfolioSection from "./components/PortfolioSection/PortfolioSection";
 import Services from "./components/Services/Services";
 
 const Page = () => {
@@ -8,6 +10,8 @@ const Page = () => {
       <HeroArea />
       <Services />
       <DetailsSection />
+      <PortfolioSection />
+      <HowWeWork />
     </div>
   );
 };

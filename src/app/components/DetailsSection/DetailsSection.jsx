@@ -45,7 +45,7 @@ const DetailsSection = () => {
           {details.map((info) => (
             <div
               key={info.id}
-              className="p-5 border border-[#E8E5E5] rounded-sm text-start group hover:bg-primary transition-colors duration-300 h-full"
+              className="p-5 border border-[#E8E5E5] rounded-sm text-start group hover:bg-primary transition-colors duration-300 h-full bg-light"
             >
               <Image
                 src={info.image}
@@ -67,6 +67,19 @@ const DetailsSection = () => {
           ))}
         </div>
         <PrimaryButton className={"mt-10"}>See Pricing</PrimaryButton>
+      </div>
+
+      <div className="relative">
+        <img
+          src="/images/vector1.png"
+          alt="vector-img"
+          className="-mt-48 relative -z-20 h-80 w-full"
+        />
+        <img
+          src="/images/vector2.png"
+          alt="vector-img"
+          className="absolute top-14"
+        />
       </div>
     </section>
   );
