@@ -69,7 +69,7 @@ const DetailsSection = () => {
         <PrimaryButton className={"mt-10"}>See Pricing</PrimaryButton>
       </div>
 
-      <div className="relative">
+      <div className="relative -z-30">
         <img
           src="/images/vector1.png"
           alt="vector-img"
@@ -78,7 +78,7 @@ const DetailsSection = () => {
         <img
           src="/images/vector2.png"
           alt="vector-img"
-          className="absolute top-14 w-full"
+          className="absolute top-14 -z-20 w-full"
         />
       </div>
     </section>

@@ -136,13 +136,13 @@ const Carousel = () => {
       <div className="flex justify-center gap-4 mt-10">
         <button
           ref={prevRef}
-          className="custom-prev border border-[#0C89FF] rounded-md hover:bg-accent hover:text-light hover:border-accent  text-[#0C89FF] p-2"
+          className="custom-prev border border-[#0C89FF] rounded-md hover:bg-accent hover:text-light hover:border-accent cursor-pointer  text-[#0C89FF] p-2"
         >
           <IoIosArrowBack size={25} />
         </button>
         <button
           ref={nextRef}
-          className="custom-next border border-[#0C89FF] rounded-md hover:bg-accent hover:text-light hover:border-accent  text-[#0C89FF] p-2"
+          className="custom-next border cursor-pointer border-accent rounded-md bg-accent text-light hover:border-accent/50 p-2"
         >
           <IoIosArrowForward size={25} />
         </button>
