@@ -7,7 +7,7 @@ const Testimonials = () => {
         <p className="font-semibold text-center text-xl tracking-widest text-secondary">
           CLIENT REVIEWS
         </p>
-        <h3 className="font-bold text-4xl text-center  my-5">
+        <h3 className="font-bold text-5xl text-center  my-5">
           Our Proud Clients
         </h3>
 

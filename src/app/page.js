@@ -3,6 +3,7 @@ import HeroArea from "./components/HeroArea/HeroArea";
 import HowWeWork from "./components/HowWeWork/HowWeWork";
 import PortfolioSection from "./components/PortfolioSection/PortfolioSection";
 import Services from "./components/Services/Services";
+import TeamMembers from "./components/TeamMembers/TeamMembers";
 import Testimonials from "./components/Testimonials/Testimonials";
 
 const Page = () => {
@@ -14,6 +15,7 @@ const Page = () => {
       <PortfolioSection />
       <HowWeWork />
       <Testimonials />
+      <TeamMembers />
     </div>
   );
 };

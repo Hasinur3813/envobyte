@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "image": "/images/image1.png",
+    "title": "Lead Developer",
+    "subtitle": "Expert in Frontend Development"
+  },
+  {
+    "id": 2,
+    "name": "Jane Smith",
+    "image": "/images/image2.png",
+    "title": "Project Manager",
+    "subtitle": "Experienced in managing large projects"
+  },
+  {
+    "id": 3,
+    "name": "Sara Lee",
+    "image": "/images/image3.png",
+    "title": "UI/UX Designer",
+    "subtitle": "Passionate about user-centered design"
+  },
+  {
+    "id": 4,
+    "name": "Michael Brown",
+    "image": "/images/image4.png",
+    "title": "Backend Developer",
+    "subtitle": "Specialized in Node.js and database management"
+  },
+  {
+    "id": 5,
+    "name": "Emily Davis",
+    "image": "/images/image1.png",
+    "title": "Quality Assurance",
+    "subtitle": "Ensuring the highest quality for the product"
+  },
+  {
+    "id": 6,
+    "name": "David Clark",
+    "image": "/images/image2.png",
+    "title": "Full Stack Developer",
+    "subtitle": "Building scalable and efficient applications"
+  },
+  {
+    "id": 7,
+    "name": "Emily Davis",
+    "image": "/images/image3.png",
+    "title": "Marketing Specialist",
+    "subtitle": "Focused on digital marketing strategies"
+  },
+  {
+    "id": 8,
+    "name": "Ethan Walker",
+    "image": "/images/image4.png",
+    "title": "DevOps Engineer",
+    "subtitle": "Optimizing development workflows and deployments"
+  },
+  {
+    "id": 9,
+    "name": "Sophia Martinez",
+    "image": "/images/image2.png",
+    "title": "Data Analyst",
+    "subtitle": "Specializing in data visualization and insights"
+  },
+  {
+    "id": 10,
+    "name": "Liam Harris",
+    "image": "/images/image1.png",
+    "title": "Business Analyst",
+    "subtitle": "Providing strategic insights for business growth"
+  },
+  {
+    "id": 11,
+    "name": "Mia Clark",
+    "image": "/images/image4.png",
+    "title": "Content Writer",
+    "subtitle": "Creating engaging content for the audience"
+  },
+  {
+    "id": 12,
+    "name": "Noah Walker",
+    "image": "/images/image1.png",
+    "title": "Graphic Designer",
+    "subtitle": "Designing visually appealing assets for the brand"
+  }
+]
