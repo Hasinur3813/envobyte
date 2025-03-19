@@ -4,7 +4,7 @@ import Carousel from "../Carousel/Carousel";
 
 const Services = () => {
   return (
-    <section className="bg-primary relative">
+    <section className="bg-primary relative overflow-x-hidden">
       <img
         src="/images/services-bg.png"
         alt="background"

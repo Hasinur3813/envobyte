@@ -103,26 +103,26 @@ const Carousel = () => {
       >
         {slides.map((slide) => (
           <SwiperSlide key={slide.id}>
-            <div className="w-full h-[300px] border rounded-md bg-[#3158C733] p-10 flex flex-col justify-center items-center font-inter">
+            <div className="w-full h-[400px] border rounded-md bg-[#3158C733] p-10 flex flex-col justify-center items-center font-inter">
               <img
                 src={slide.image}
                 alt={slide.title}
                 className="w-[150px] h-[150px] object-contain"
               />
-              <h5 className="font-semibold text-2xl text-light leading-10">
+              <h5 className="font-semibold text-xl md:text-2xl text-light leading-10">
                 {slide.title}
               </h5>
               <p className="text-base text-light">{slide.subtitle}</p>
-              <div className="flex items-center gap-4 mt-4">
+              <div className="flex flex-col sm:flex-row items-center gap-4 mt-4">
                 <button
                   type="button"
-                  className="bg-[#0C89FF] px-10 py-3 rounded-full text-sm text-light cursor-pointer"
+                  className="bg-[#0C89FF] px-10 py-3 rounded-full text-sm text-light cursor-pointer w-full sm:w-auto"
                 >
                   Portfolio
                 </button>
                 <button
                   type="button"
-                  className="border border-[#0C89FF] px-10 py-3 rounded-full text-sm text-[#0C89FF] cursor-pointer"
+                  className="border border-[#0C89FF] px-10 py-3 rounded-full text-sm text-[#0C89FF] cursor-pointer  w-full sm:w-auto"
                 >
                   Order
                 </button>

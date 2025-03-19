@@ -32,22 +32,28 @@ const HowWeWork = () => {
           />
 
           <WorkProcess
-            className={"absolute -top-20 -left-10"}
+            className={"absolute  -top-20 -left-2 lg:-left-0"}
             num="01"
             content={"Make An Appointment"}
           />
           <WorkProcess
-            className={"absolute top-32 left-64"}
+            className={
+              "absolute left-10 top-5 sm:left-30 md:left-40 md:top-14 lg:top-32 lg:left-64"
+            }
             num="02"
             content={"Meet Our Teem"}
           />
           <WorkProcess
-            className={"absolute -top-24 right-64"}
+            className={
+              "absolute -top-20 right-10 sm:right-30 sm:-top-24 md:right-40 lg:-top-24 lg:right-64"
+            }
             num="03"
             content={"Get Our Consultation"}
           />
           <WorkProcess
-            className={"absolute top-24 -right-5"}
+            className={
+              "absolute top-5 right-0 md:top-12 lg:top-24 lg:right-0 xl:-right-5 "
+            }
             num="04"
             content={"Start Project"}
           />

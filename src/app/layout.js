@@ -1,3 +1,4 @@
+import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
 import "./globals.css";
 
@@ -13,6 +14,7 @@ export default function RootLayout({ children }) {
       <body className="font-raleway">
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
