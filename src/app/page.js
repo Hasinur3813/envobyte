@@ -1,4 +1,5 @@
 import DetailsSection from "./components/DetailsSection/DetailsSection";
+import FAQSection from "./components/FAQSection/FAQSection";
 import HeroArea from "./components/HeroArea/HeroArea";
 import HowWeWork from "./components/HowWeWork/HowWeWork";
 import PortfolioSection from "./components/PortfolioSection/PortfolioSection";
@@ -16,6 +17,7 @@ const Page = () => {
       <HowWeWork />
       <Testimonials />
       <TeamMembers />
+      <FAQSection />
     </div>
   );
 };
