@@ -2,7 +2,7 @@
 import { FaStar } from "react-icons/fa";
 import ReactStars from "react-rating-stars-component";
 
-const ClientReview = () => {
+const ClientReview = ({ name, source, platform }) => {
   return (
     <div className="p-8 border border-[#f2f3f9] rounded-md space-y-4">
       <ReactStars
@@ -21,13 +21,14 @@ const ClientReview = () => {
       <div className="flex items-center gap-2">
         <img
           src="/images/image1.png"
-          alt="image"
+          alt={name}
           className="w-12 h-12 rounded-full object-cover"
         />
         <div>
-          <h4 className="text-[#0A2C8C] font-medium text-lg">Brain Clark</h4>
-          <p className="flex justify-center items-center gap-2 text-sm text-gray-400">
-            <img src="/images/fiver.png" alt="fiver" /> from fiver
+          <h4 className="text-[#0A2C8C] font-medium text-lg">{name}</h4>
+          <p className="flex justify-start items-center gap-2 text-sm text-gray-400">
+            <img src={platform} alt="fiver" />
+            from {source}
           </p>
         </div>
       </div>

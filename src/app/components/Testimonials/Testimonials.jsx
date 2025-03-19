@@ -1,10 +1,4 @@
-import ClientReview from "../ClientReview/ClientReview";
-
-const reviews = [
-  {
-    id: 1,
-  },
-];
+import Reviews from "../Reviews/Reviews";
 
 const Testimonials = () => {
   return (
@@ -17,14 +11,7 @@ const Testimonials = () => {
           Our Proud Clients
         </h3>
 
-        <div className="grid grid-cols-3 gap-5 mt-12">
-          <ClientReview />
-          <ClientReview />
-          <ClientReview />
-          <ClientReview />
-          <ClientReview />
-          <ClientReview />
-        </div>
+        <Reviews />
       </div>
     </section>
   );
