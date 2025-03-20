@@ -22,7 +22,7 @@ const ContactSection = () => {
 
         {/* Right - Contact Information */}
         <div className="w-full md:w-1/2 p-6 flex flex-col justify-center space-y-4">
-          <h2 className="text-5xl  font-extrabold text-light mb-10">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl  font-extrabold text-light mb-10">
             Let us know what you think!
           </h2>
           <p className="text-light text-base mb-8">

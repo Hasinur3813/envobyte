@@ -83,7 +83,7 @@ const Footer = () => {
 
       {/* Footer Bottom */}
       <div className="text-center py-4 border-t border-[#E5E7EB33]/50  text-light text-sm">
-        &copy; {new Date().getFullYear()} - ENVOYTE, All rights reserved.
+        &copy; {new Date().getFullYear()} - ENVOBYTE, All rights reserved.
       </div>
     </footer>
   );

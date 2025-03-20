@@ -19,11 +19,11 @@ const ContactForm = () => {
   };
 
   return (
-    <div>
+    <div className="w-full md:w-1/2">
       <Toaster />
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="space-y-4 p-8 border border-[#E1E4ED26] bg-[#0A2C8C33] rounded-md"
+        className="space-y-4 p-8 border border-[#E1E4ED26] bg-[#0A2C8C33] rounded-md w-full"
       >
         {/* Name & Email */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">

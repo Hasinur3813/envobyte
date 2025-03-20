@@ -45,7 +45,7 @@ const FAQSection = () => {
   return (
     <section className="font-inter py-32">
       <div className="max-w-[940px] mx-auto px-4">
-        <h3 className="font-bold text-5xl leading-12 text-[#0A2C8C] text-center">
+        <h3 className="font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-0 lg:leading-12 text-[#0A2C8C] text-center">
           Frequently Asked Questions
         </h3>
 
@@ -60,7 +60,7 @@ const FAQSection = () => {
                 <h3
                   className={`${
                     open === index ? "text-[#0A2C8C]" : "text-[#6D758F]"
-                  } text-2xl font-semibold flex items-center`}
+                  } text-lg md:text-2xl font-semibold flex items-center`}
                 >
                   <span className="mr-3 text-[#0A2C8C] font-semibold text-lg">
                     {index + 1 >= 10 ? index + 1 : `0${index + 1}`}
@@ -78,7 +78,7 @@ const FAQSection = () => {
 
               {open === index && (
                 <div className="p-4 ">
-                  <p className="text-[#6D758F] text-2xl leading-7">
+                  <p className="text-[#6D758F] text-base md:text-2xl leading-7">
                     {item.answer}
                   </p>
                 </div>

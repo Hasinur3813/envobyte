@@ -33,10 +33,10 @@ const DetailsSection = () => {
   return (
     <section className="pt-20">
       <div className="max-w-6xl mx-auto px-4 text-center">
-        <p className="font-semibold text-base tracking-widest text-secondary mb-4">
+        <p className="font-semibold text-base tracking-widest text-secondary mb-2 lg:mb-4">
           MORE DETAILS
         </p>
-        <h3 className="font-bold font-inter text-5xl tracking-wide mb-10 text-[#0A2C8C]">
+        <h3 className="font-bold font-inter text-2xl sm:text-3xl md:text-4xl lg:text-5xl tracking-wide mb-10 text-[#0A2C8C]">
           Get Your Answer
         </h3>
 
@@ -54,7 +54,7 @@ const DetailsSection = () => {
                 height="250"
                 className="mx-auto"
               />
-              <h3 className="mt-8 font-semibold text-3xl group-hover:text-light mb-2">
+              <h3 className="mt-8 font-semibold text-xl md:text-2xl lg:text-3xl group-hover:text-light mb-2">
                 {info.title}
               </h3>
               <p className="font-medium text-base text-secondary mb-6  ">
@@ -78,7 +78,7 @@ const DetailsSection = () => {
         <img
           src="/images/vector2.png"
           alt="vector-img"
-          className="absolute top-14 -z-20 w-full"
+          className="absolute top-14 h-96 -z-20 w-full"
         />
       </div>
     </section>

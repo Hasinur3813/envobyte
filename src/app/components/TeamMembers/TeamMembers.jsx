@@ -28,10 +28,10 @@ const TeamMembers = () => {
   return (
     <section>
       <div className="container mx-auto px-4">
-        <p className="font-semibold text-center text-xl tracking-widest text-secondary">
+        <p className="font-semibold text-center text-lg md:text-xl tracking-widest text-secondary">
           EXPERINCED TEAM
         </p>
-        <h3 className="font-bold text-5xl text-center mt-4">
+        <h3 className="font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center mt-2 lg:mt-4">
           Our Team Members
         </h3>
 

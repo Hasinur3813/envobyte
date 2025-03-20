@@ -14,7 +14,7 @@ const HowWeWork = () => {
           <p className="font-semibold text-xl tracking-widest text-light">
             HOW WE WORK
           </p>
-          <h3 className="font-bold text-4xl text-light my-5">
+          <h3 className="font-bold text-2xl md:text-3xl lg:text-4xl text-light my-5">
             Our Process For Delivering Results
           </h3>
           <p className="text-base max-w-lg mx-auto text-gray-500">
