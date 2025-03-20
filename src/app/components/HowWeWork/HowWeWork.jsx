@@ -1,6 +1,7 @@
 import React from "react";
 import WorkProcess from "../WorkProcess/WorkProcess";
 import PrimaryButton from "../Buttons/PrimaryButton";
+import Link from "next/link";
 
 const HowWeWork = () => {
   return (
@@ -59,7 +60,9 @@ const HowWeWork = () => {
           />
         </div>
 
-        <PrimaryButton>Contact Now</PrimaryButton>
+        <Link href={"#contact"}>
+          <PrimaryButton>Contact Now</PrimaryButton>
+        </Link>
       </div>
     </section>
   );

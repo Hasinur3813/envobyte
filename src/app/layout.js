@@ -1,3 +1,4 @@
+import { Toaster } from "react-hot-toast";
 import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
 import "./globals.css";
@@ -14,6 +15,7 @@ export default function RootLayout({ children }) {
       <body className="font-raleway">
         <Navbar />
         <div className="min-h-screen">{children}</div>
+        <Toaster />
         <Footer />
       </body>
     </html>

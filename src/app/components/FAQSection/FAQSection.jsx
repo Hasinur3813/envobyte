@@ -45,7 +45,7 @@ const FAQSection = () => {
   return (
     <section className="font-inter py-32">
       <div className="max-w-[940px] mx-auto px-4">
-        <h3 className="font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-0 lg:leading-12 text-[#0A2C8C] text-center">
+        <h3 className="font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl lg:leading-12 text-[#0A2C8C] text-center">
           Frequently Asked Questions
         </h3>
 

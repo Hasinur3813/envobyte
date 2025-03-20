@@ -2,7 +2,7 @@
 
 import { useForm } from "react-hook-form";
 import { IoArrowForward } from "react-icons/io5";
-import { toast, Toaster } from "react-hot-toast";
+import { toast } from "react-hot-toast";
 
 const ContactForm = () => {
   const {
@@ -20,7 +20,6 @@ const ContactForm = () => {
 
   return (
     <div className="w-full md:w-1/2">
-      <Toaster />
       <form
         onSubmit={handleSubmit(onSubmit)}
         className="space-y-4 p-8 border border-[#E1E4ED26] bg-[#0A2C8C33] rounded-md w-full"

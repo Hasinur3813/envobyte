@@ -2,6 +2,7 @@ import React from "react";
 import PrimaryButton from "../Buttons/PrimaryButton";
 import Image from "next/image";
 import HeroStats from "../HeroStats/HeroStats";
+import Link from "next/link";
 
 const HeroArea = () => {
   return (
@@ -32,10 +33,14 @@ const HeroArea = () => {
 
           {/* cta button */}
           <div className="mt-12 sm:space-x-4 flex flex-col sm:flex-row space-y-4 sm:space-y-0 justify-center">
-            <PrimaryButton>SEE PRICING</PrimaryButton>
-            <PrimaryButton className="!bg-transparent border">
-              BOOK AN APPOINMENT
-            </PrimaryButton>
+            <Link href={"/pricing"}>
+              <PrimaryButton className={"w-full"}>SEE PRICING</PrimaryButton>
+            </Link>
+            <Link href={"#contact"}>
+              <PrimaryButton className="w-full !bg-transparent border">
+                BOOK AN APPOINMENT
+              </PrimaryButton>
+            </Link>
           </div>
 
           {/* stats */}

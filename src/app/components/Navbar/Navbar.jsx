@@ -25,8 +25,11 @@ const Navbar = () => {
           <MenuLinks />
 
           {/* pricing button */}
-
-          <PrimaryButton className="hidden lg:block">See Pricing</PrimaryButton>
+          <Link href={"/pricing"}>
+            <PrimaryButton className="hidden lg:block">
+              See Pricing
+            </PrimaryButton>
+          </Link>
 
           {/* navbar end */}
 

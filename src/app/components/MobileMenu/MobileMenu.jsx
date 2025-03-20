@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import PrimaryButton from "../Buttons/PrimaryButton";
 
 const MobileMenu = ({ visibleMenu }) => {
   const pathname = usePathname();
@@ -23,7 +24,7 @@ const MobileMenu = ({ visibleMenu }) => {
         <li>
           <a
             className="text-light font-semibold text-base leading-5 hover:text-accent transition-colors duration-200"
-            href="http://"
+            href="/services"
           >
             SERVICES
           </a>
@@ -31,7 +32,7 @@ const MobileMenu = ({ visibleMenu }) => {
         <li>
           <a
             className="text-light font-semibold text-base leading-5 hover:text-accent transition-colors duration-200"
-            href="http://"
+            href="/combo-sales"
           >
             COMBO SALES
           </a>
@@ -39,7 +40,7 @@ const MobileMenu = ({ visibleMenu }) => {
         <li>
           <a
             className="text-light font-semibold text-base leading-5 hover:text-accent transition-colors duration-200"
-            href="http://"
+            href="/portfolio"
           >
             PORTFOLIO
           </a>
@@ -47,7 +48,7 @@ const MobileMenu = ({ visibleMenu }) => {
         <li>
           <a
             className="text-light font-semibold text-base leading-5 hover:text-accent transition-colors duration-200"
-            href="http://"
+            href="/about-us"
           >
             ABOUT US
           </a>
@@ -55,10 +56,16 @@ const MobileMenu = ({ visibleMenu }) => {
         <li>
           <a
             className="text-light font-semibold text-base leading-5 hover:text-accent transition-colors duration-200"
-            href="http://"
+            href="/blogs"
           >
             BLOGS
           </a>
+        </li>
+        {/* pricing button */}
+        <li className="w-full">
+          <Link href={"/pricing"} className="block">
+            <PrimaryButton className="w-full">See Pricing</PrimaryButton>
+          </Link>
         </li>
       </ul>
     </div>

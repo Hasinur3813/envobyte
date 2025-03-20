@@ -9,6 +9,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { IoIosArrowBack, IoIosArrowForward, IoMdClose } from "react-icons/io";
 import PortfolioModal from "../PortfolioModal/PortfolioModal";
+import Link from "next/link";
 
 const portfolioImages = [
   {
@@ -116,7 +117,12 @@ const PortfolioSection = () => {
               Check Our Available Services
             </h3>
           </div>
-          <PrimaryButton className="relative z-10">All Portfolio</PrimaryButton>
+
+          <Link href={"/portfolio"}>
+            <PrimaryButton className="relative z-10">
+              All Portfolio
+            </PrimaryButton>
+          </Link>
         </div>
         {/* horizontal line */}
         <div className="w-full h-[2px] bg-black opacity-30 my-8 rounded-md"></div>

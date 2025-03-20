@@ -1,6 +1,7 @@
 import React from "react";
 import PrimaryButton from "../Buttons/PrimaryButton";
 import Carousel from "../Carousel/Carousel";
+import Link from "next/link";
 
 const Services = () => {
   return (
@@ -21,7 +22,11 @@ const Services = () => {
               Check Our Available Services
             </h3>
           </div>
-          <PrimaryButton className="relative z-10">All Services</PrimaryButton>
+          <Link href={"/services"}>
+            <PrimaryButton className="relative z-10">
+              All Services
+            </PrimaryButton>
+          </Link>
         </div>
         {/* horizontal line */}
         <div className="w-full h-[2px] bg-light opacity-40 my-8 rounded-md"></div>

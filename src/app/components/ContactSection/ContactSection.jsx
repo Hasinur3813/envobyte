@@ -6,7 +6,7 @@ import ContactForm from "../ContactForm/ContactForm";
 
 const ContactSection = () => {
   return (
-    <section className=" bg-[#001655] py-36 ">
+    <section id="contact" className=" bg-[#001655] py-36 ">
       <div
         className="max-w-7xl font-inter mx-auto px-4 flex flex-col justify-around items-start
      md:flex-row relative z-10"

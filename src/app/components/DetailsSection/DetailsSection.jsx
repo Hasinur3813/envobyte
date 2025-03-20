@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import PrimaryButton from "../Buttons/PrimaryButton";
+import Link from "next/link";
 
 const details = [
   {
@@ -66,7 +67,9 @@ const DetailsSection = () => {
             </div>
           ))}
         </div>
-        <PrimaryButton className={"mt-10"}>See Pricing</PrimaryButton>
+        <Link href={"/pricing"}>
+          <PrimaryButton className={"mt-10"}>See Pricing</PrimaryButton>
+        </Link>
       </div>
 
       <div className="relative -z-30">
