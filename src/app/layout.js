@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className="font-raleway">
         <Navbar />
-        <div style={{ height: "calc(100vh - 100px)" }}>{children}</div>
+        <div className="min-h-screen">{children}</div>
         <Footer />
       </body>
     </html>

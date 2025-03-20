@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "title": "Creative Content Writing Service",
+    "subtitle": "Engaging and SEO-friendly content tailored to your brand.",
+    "price": "$149/month",
+    "link": "/services/content-writing",
+    "image": "https://i.ibb.co.com/5h4cvg5b/content-writing.jpg",
+    "category": "Content Writing"
+  },
+  {
+    "id": 2,
+    "title": "WordPress Development",
+    "subtitle": "Custom WordPress websites optimized for performance and security.",
+    "price": "$499/project",
+    "link": "/services/wordpress-development",
+    "image": "https://i.ibb.co.com/ZzfFLc3W/wordpress-development.jpg",
+    "category": "Web Development"
+  },
+  {
+    "id": 3,
+    "title": "Monthly SEO Services",
+    "subtitle": "Improve your search rankings with expert SEO strategies.",
+    "price": "$299/month",
+    "link": "/services/seo",
+    "image": "https://i.ibb.co.com/r2CNCz8b/seo-service.jpg",
+    "category": "SEO"
+  },
+  {
+    "id": 4,
+    "title": "Mobile App Development Services",
+    "subtitle": "Transform your ideas into powerful mobile applications.",
+    "price": "$999/project",
+    "link": "/services/mobile-app-development",
+    "image": "https://i.ibb.co.com/CTx5jx4/app-development.jpg",
+    "category": "App Development"
+  },
+  {
+    "id": 5,
+    "title": "Custom Website Development",
+    "subtitle": "Fully customized websites built for performance and scalability.",
+    "price": "$799/project",
+    "link": "/services/custom-website-development",
+    "image": "https://i.ibb.co.com/6RJP1d0g/website-development.jpg",
+    "category": "Web Development"
+  },
+  {
+    "id": 6,
+    "title": "Logo Design",
+    "subtitle": "Unique and professional logo designs that represent your brand.",
+    "price": "$99/design",
+    "link": "/services/logo-design",
+    "image": "https://i.ibb.co.com/93TG0sGs/logo-design.jpg",
+    "category": "Graphic Design"
+  },
+  {
+    "id": 7,
+    "title": "Website UI Design",
+    "subtitle": "Modern and user-friendly UI designs to enhance user experience.",
+    "price": "$399/project",
+    "link": "/services/website-ui-design",
+    "image": "https://i.ibb.co.com/5PFLtR5/website-ui.jpg",
+    "category": "UI/UX Design"
+  },
+  {
+    "id": 8,
+    "title": "Mobile App UI Design",
+    "subtitle": "Attractive and intuitive UI designs for mobile applications.",
+    "price": "$499/project",
+    "link": "/services/mobile-app-ui-design",
+    "image": "https://i.ibb.co.com/HpNGrjfZ/mobile-app-ui.jpg",
+    "category": "UI/UX Design"
+  },
+  {
+    "id": 9,
+    "title": "Google Ads",
+    "subtitle": "Boost your online presence with targeted Google Ads campaigns.",
+    "price": "$199/month",
+    "link": "/services/google-ads",
+    "image": "https://i.ibb.co.com/p6LG8F4t/google-ads.png",
+    "category": "Digital Marketing"
+  },
+  {
+    "id": 10,
+    "title": "Facebook Ads",
+    "subtitle": "Reach your ideal customers with high-performing Facebook ads.",
+    "price": "$199/month",
+    "link": "/services/facebook-ads",
+    "image": "https://i.ibb.co.com/Jj4tGvWm/facebook-ads.jpg",
+    "category": "Digital Marketing"
+  },
+  {
+    "id": 11,
+    "title": "Brochure Design",
+    "subtitle": "Eye-catching brochures to showcase your business effectively.",
+    "price": "$149/design",
+    "link": "/services/brochure-design",
+    "image": "https://i.ibb.co.com/xSF2CBmK/Brochure-design.jpg",
+    "category": "Graphic Design"
+  },
+  {
+    "id": 12,
+    "title": "Social Media Management",
+    "subtitle": "Optimize and grow your brand’s presence across social media.",
+    "price": "$299/month",
+    "link": "/services/social-media-management",
+    "image": "https://i.ibb.co.com/Jw22Xzfh/social-media-management.jpg",
+    "category": "Social Media Marketing"
+  }
+]
