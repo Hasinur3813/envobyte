@@ -16,44 +16,49 @@ const MenuLinks = ({ visibleMenu }) => {
         </Link>
       </li>
       <li>
-        <a
+        <Link
           className="text-light font-semibold text-base leading-5 hover:text-accent transition-colors duration-200"
-          href="http://"
+          href="/services"
+          aria-current={pathname === "/services" ? "active" : undefined}
         >
-          SERVICE
-        </a>
+          SERVICES
+        </Link>
       </li>
       <li>
-        <a
+        <Link
           className="text-light font-semibold text-base leading-5 hover:text-accent transition-colors duration-200"
-          href="http://"
+          href="/combo-sales"
+          aria-current={pathname === "/combo-sales" ? "active" : undefined}
         >
           COMBO SALES
-        </a>
+        </Link>
       </li>
       <li>
-        <a
+        <Link
           className="text-light font-semibold text-base leading-5 hover:text-accent transition-colors duration-200"
-          href="http://"
+          href="/portfolio"
+          aria-current={pathname === "/portfolio" ? "active" : undefined}
         >
           PORTFOLIO
-        </a>
+        </Link>
       </li>
       <li>
-        <a
+        <Link
           className="text-light font-semibold text-base leading-5 hover:text-accent transition-colors duration-200"
-          href="http://"
+          href="/about-us"
+          aria-current={pathname === "/about-us" ? "active" : undefined}
         >
           ABOUT US
-        </a>
+        </Link>
       </li>
       <li>
-        <a
+        <Link
           className="text-light font-semibold text-base leading-5 hover:text-accent transition-colors duration-200"
-          href="http://"
+          href="/blogs"
+          aria-current={pathname === "/blogs" ? "active" : undefined}
         >
           BLOGS
-        </a>
+        </Link>
       </li>
     </ul>
   );

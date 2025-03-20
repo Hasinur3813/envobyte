@@ -12,34 +12,58 @@ import PortfolioModal from "../PortfolioModal/PortfolioModal";
 
 const portfolioImages = [
   {
-    src: "/images/writing.jpg",
-    title: "Project 1",
-    description: "Description for project 1",
+    id: 1,
+    src: "/images/Billie-mockup.jpg",
+    title: "Billie-mockup",
+    description: "Workforce management for the changing world.",
   },
   {
-    src: "/images/writing.jpg",
-    title: "Project 2",
-    description: "Description for project 2",
+    id: 2,
+    src: "/images/Bravaa-Mockup.jpg",
+    title: "Bravaa-Mockup",
+    description: "Grow your skills, Define your future.",
   },
   {
-    src: "/images/writing.jpg",
-    title: "Project 3",
-    description: "Description for project 3",
+    id: 3,
+    src: "/images/Ccosa-mockup.jpg",
+    title: "Ccosa-mockup",
+    description: "Ccosa-mockup",
   },
   {
-    src: "/images/writing.jpg",
-    title: "Project 4",
-    description: "Description for project 4",
+    id: 4,
+    src: "/images/E-learning-mockup.jpg",
+    title: "E-learning-mockup",
+    description: "Improve your skills in this way.",
   },
   {
-    src: "/images/writing.jpg",
-    title: "Project 5",
-    description: "Description for project 5",
+    id: 5,
+    src: "/images/Easypaid-mockup.jpg",
+    title: "Easypaid-mockup",
+    description: "Keep track of all your payments with easypaid.",
   },
   {
-    src: "/images/writing.jpg",
-    title: "Project 6",
-    description: "Description for project 6",
+    id: 6,
+    src: "/images/LanghamTrading-mockup.jpg",
+    title: "LanghamTrading-mockup",
+    description: "Grow your agency.",
+  },
+  {
+    id: 7,
+    src: "/images/LanghamTrading-V2-mockup.jpg",
+    title: "LanghamTrading-mockup-V2",
+    description: "Stop chasing losing trades.",
+  },
+  {
+    id: 8,
+    src: "/images/Maily-mockup.jpg",
+    title: "Maily-mockup",
+    description: "Email marketing software to engage your audience.",
+  },
+  {
+    id: 9,
+    src: "/images/Writing.jpg",
+    title: "Writing-mockup",
+    description: "Ask anything you desire, Our chat holds the solutions.",
   },
 ];
 
@@ -47,12 +71,22 @@ const PortfolioSection = () => {
   const swiperRef = useRef(null);
   const modalRef = useRef(null);
 
+  // Function to pair up images
+  const getImagePairs = () => {
+    let pairs = [];
+    for (let i = 0; i < portfolioImages.length; i += 2) {
+      pairs.push([portfolioImages[i], portfolioImages[i + 1]]);
+    }
+    return pairs;
+  };
+
   // State for modal visibility and selected image
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
 
   // Function to open modal with selected image
   const openModal = (image) => {
+    document.body.style.overflow = "hidden";
     setSelectedImage(image);
     setIsModalOpen(true);
   };
@@ -66,6 +100,7 @@ const PortfolioSection = () => {
     ) {
       setIsModalOpen(false);
       setSelectedImage(null);
+      document.body.style.overflow = "auto";
     }
   };
 
@@ -135,21 +170,22 @@ const PortfolioSection = () => {
             onSwiper={(swiper) => (swiperRef.current = swiper)}
             className="portfolio-swiper"
           >
-            {portfolioImages.map((image, index) => (
-              <SwiperSlide key={index}>
+            {getImagePairs().map((image, index) => (
+              <SwiperSlide key={image.id}>
                 <div className="grid grid-rows-2 gap-4">
                   <img
-                    src={image.src}
-                    alt={`Portfolio ${index}`}
+                    src={image[0].src}
+                    alt={image[0].title}
                     className="rounded-xl cursor-pointer"
-                    onClick={() => openModal(image)}
+                    onClick={() => openModal(image[0])}
                   />
-                  {portfolioImages[index + 1] && (
+                  {/* Ensure the next image exists and render it */}
+                  {image[1] && (
                     <img
-                      src={portfolioImages[index + 1].src}
-                      alt={`Portfolio ${index + 1}`}
+                      src={image[1].src}
+                      alt={image[1].title}
                       className="rounded-xl cursor-pointer"
-                      onClick={() => openModal(portfolioImages[index + 1])}
+                      onClick={() => openModal(image[1])}
                     />
                   )}
                 </div>
