@@ -12,7 +12,7 @@ const Services = () => {
       />
       <div className="container mx-auto px-4">
         {/* top content */}
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center relative z-50">
           <div>
             <p className="font-semibold text-base text-accent leading-6 tracking-widest">
               DIGITAL SERVICES

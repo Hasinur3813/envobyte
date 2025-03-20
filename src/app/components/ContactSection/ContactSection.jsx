@@ -46,7 +46,9 @@ const ContactSection = () => {
               <span className="text-sm text-light">Business:</span>
               <p className="text-white font-semibold text-base flex items-center justify-between">
                 support@envobyte.com{" "}
-                <FaExternalLinkAlt className="ms-2 text-[#4D5AE8]" />
+                <a href="mailto: support@envobyte.com" target="_blank">
+                  <FaExternalLinkAlt className="ms-2 text-[#4D5AE8]" />
+                </a>
               </p>
             </div>
           </div>
@@ -67,7 +69,10 @@ const ContactSection = () => {
               <span className="text-sm text-light">Whatsapp:</span>
               <p className="text-white font-semibold text-base flex items-center justify-between">
                 +1 (667) 777 2477
-                <FaExternalLinkAlt className="ms-2 text-[#4D5AE8]" />
+                <a href="http://wa.me/+16677772477" target="_blank">
+                  {" "}
+                  <FaExternalLinkAlt className="ms-2 text-[#4D5AE8]" />
+                </a>
               </p>
             </div>
           </div>
@@ -88,7 +93,9 @@ const ContactSection = () => {
               <span className="text-sm text-light">Linkedin:</span>
               <p className="text-white font-semibold text-base flex items-center justify-between">
                 www.linkedin.com/company/envobyte
-                <FaExternalLinkAlt className="ms-2 text-[#4D5AE8]" />
+                <a href="http://linkedin.com/company/envobyte" target="_blank">
+                  <FaExternalLinkAlt className="ms-2 text-[#4D5AE8]" />
+                </a>
               </p>
             </div>
           </div>
