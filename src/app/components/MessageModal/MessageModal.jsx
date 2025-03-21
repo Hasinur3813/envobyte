@@ -28,11 +28,12 @@ const MessageModal = () => {
           <div className="bg-white font-inter p-6 rounded-lg shadow-lg w-[90%] max-w-md">
             <h2 className="text-xl font-semibold">A Note to HR</h2>
             <p className="text-gray-700 mt-3">
-              Dear HR, I’ve recently started exploring Next.js, and this is my
-              first project using it. Since I’m still learning, there might be
-              areas for improvement. I appreciate your time in reviewing my
-              work, and I’m open to any feedback that can help me refine my
-              skills. Looking forward to your valuable insights. Thank you!
+              Dear HR, I’ve recently started exploring <strong>Next.js</strong>,
+              and this is my first project using it. Since I’m still learning,
+              there might be areas for improvement. I appreciate your time in
+              reviewing my work, and I’m open to any feedback that can help me
+              refine my skills. Looking forward to your valuable insights. Thank
+              you!
             </p>
             <div className="mt-4 flex justify-end gap-3">
               <button

@@ -1,10 +1,14 @@
-import React from "react";
+"use client";
 import PrimaryButton from "../Buttons/PrimaryButton";
 import Image from "next/image";
 import HeroStats from "../HeroStats/HeroStats";
 import Link from "next/link";
+import { motion } from "framer-motion";
+import useAnimation from "@/app/hooks/useAnimation";
 
 const HeroArea = () => {
+  const { fadeUp, zoomIn } = useAnimation();
+
   return (
     <div className="bg-primary relative">
       {/* glowing effect */}
@@ -24,35 +28,61 @@ const HeroArea = () => {
       {/* container for the hero area content */}
       <div className="container mx-auto px-4 ">
         <div className="pt-8 md:pt-16 pb-32 text-center relative">
-          <h1 className="font-extrabold text-2xl sm:text-4xl md:text-6xl lg:text-7xl tracking-widest text-light mb-1 md:mb-2 ">
+          <motion.h1
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="visible"
+            className="font-extrabold text-2xl sm:text-4xl md:text-6xl lg:text-7xl tracking-widest text-light mb-1 md:mb-2 "
+          >
             DIGITAL SERVICES
-          </h1>
-          <p className="text-light text-sm sm:text-lg md:text-2xl leading-7 font-extrabold">
+          </motion.h1>
+          <motion.p
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="visible"
+            custom={0.2}
+            className="text-light text-sm sm:text-lg md:text-2xl leading-7 font-extrabold"
+          >
             BUILDING YOUR EMPIRE DIGITALLY
-          </p>
+          </motion.p>
 
           {/* cta button */}
           <div className="mt-12 sm:space-x-4 flex flex-col sm:flex-row space-y-4 sm:space-y-0 justify-center">
-            <Link href={"/pricing"}>
-              <PrimaryButton className={"w-full"}>SEE PRICING</PrimaryButton>
-            </Link>
-            <Link href={"#contact"}>
-              <PrimaryButton className="w-full !bg-transparent border">
-                BOOK AN APPOINMENT
-              </PrimaryButton>
-            </Link>
+            <motion.div
+              variants={fadeUp}
+              initial="hidden"
+              whileInView="visible"
+            >
+              <Link href={"/pricing"}>
+                <PrimaryButton className={"w-full"}>SEE PRICING</PrimaryButton>
+              </Link>
+            </motion.div>
+            <motion.div
+              variants={fadeUp}
+              initial="hidden"
+              whileInView="visible"
+              custom={0.2}
+            >
+              <Link href={"#contact"}>
+                <PrimaryButton className="w-full !bg-transparent border">
+                  BOOK AN APPOINMENT
+                </PrimaryButton>
+              </Link>
+            </motion.div>
           </div>
 
           {/* stats */}
           <HeroStats />
           {/* hero image */}
-          <Image
-            src="/images/hero.png"
-            alt="hero.png"
-            width={980}
-            height={550}
-            className="mx-auto"
-          />
+          <motion.div variants={zoomIn} initial="hidden" whileInView="visible">
+            <Image
+              src="/images/hero.png"
+              alt="hero.png"
+              width={980}
+              height={550}
+              className="mx-auto"
+            />
+          </motion.div>
         </div>
       </div>
     </div>

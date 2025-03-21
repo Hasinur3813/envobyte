@@ -13,7 +13,7 @@ export default function ErrorPage({ error, reset }) {
   return (
     <div className="flex flex-col items-center justify-center h-screen text-center bg-gray-900 text-white">
       <h1 className="text-4xl font-bold">Something went wrong!</h1>
-      <p className="text-lg mt-2">
+      <p className="text-lg mt-2 max-w-5xl mx-auto px-4">
         {error.message || "An unexpected error occurred."}
       </p>
       <div className="mt-6 space-x-4">
