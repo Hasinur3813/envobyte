@@ -1,4 +1,3 @@
-import React from "react";
 import PrimaryButton from "../Buttons/PrimaryButton";
 import Carousel from "../Carousel/Carousel";
 import Link from "next/link";

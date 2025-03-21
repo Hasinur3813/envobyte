@@ -10,6 +10,8 @@ import "swiper/css/pagination";
 import { IoIosArrowBack, IoIosArrowForward, IoMdClose } from "react-icons/io";
 import PortfolioModal from "../PortfolioModal/PortfolioModal";
 import Link from "next/link";
+import useAnimation from "@/app/hooks/useAnimation";
+import { motion } from "framer-motion";
 
 const portfolioImages = [
   {
@@ -69,6 +71,7 @@ const portfolioImages = [
 ];
 
 const PortfolioSection = () => {
+  const { fadeUp, zoomIn } = useAnimation();
   const swiperRef = useRef(null);
   const prevRef = useRef(null);
   const nextRef = useRef(null);
@@ -192,7 +195,13 @@ const PortfolioSection = () => {
           >
             {getImagePairs().map((image, index) => (
               <SwiperSlide key={image.id}>
-                <div className="grid grid-rows-2 gap-4">
+                <motion.div
+                  variants={zoomIn}
+                  initial="hidden"
+                  whileInView="visible"
+                  custom={index * 0.1}
+                  className="grid grid-rows-2 gap-4"
+                >
                   <img
                     src={image[0].src}
                     alt={image[0].title}
@@ -208,7 +217,7 @@ const PortfolioSection = () => {
                       onClick={() => openModal(image[1])}
                     />
                   )}
-                </div>
+                </motion.div>
               </SwiperSlide>
             ))}
           </Swiper>

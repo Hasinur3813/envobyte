@@ -24,7 +24,7 @@ const MessageModal = () => {
   return (
     <>
       {isOpen && (
-        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
+        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-1000">
           <div className="bg-white font-inter p-6 rounded-lg shadow-lg w-[90%] max-w-md">
             <h2 className="text-xl font-semibold">A Note to HR</h2>
             <p className="text-gray-700 mt-3">

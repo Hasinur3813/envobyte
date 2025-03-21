@@ -23,7 +23,7 @@ const Footer = () => {
         <FooterSection
           title="Company"
           links={[
-            { name: "About Us", url: "#" },
+            { name: "About Us", url: "/about-us" },
             { name: "Privacy Policy", url: "#" },
             { name: "Refund Policy", url: "#" },
           ]}
@@ -34,8 +34,8 @@ const Footer = () => {
         <FooterSection
           title="Learn More"
           links={[
-            { name: "Combo Offer", url: "#" },
-            { name: "Service Industries", url: "#" },
+            { name: "Combo Offer", url: "/combo-sales" },
+            { name: "Service Industries", url: "/services" },
             { name: "Envobyte Apps", url: "#" },
           ]}
         />

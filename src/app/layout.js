@@ -2,7 +2,6 @@ import { Toaster } from "react-hot-toast";
 import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
 import "./globals.css";
-import MessageModal from "./components/MessageModal/MessageModal";
 
 export const metadata = {
   title: "EnvoByte | Best IT Solution",
@@ -14,7 +13,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth">
       <body className="font-raleway">
-        <MessageModal />
         <Navbar />
         <div className="min-h-screen">{children}</div>
         <Toaster />

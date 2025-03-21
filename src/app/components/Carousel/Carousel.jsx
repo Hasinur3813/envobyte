@@ -8,6 +8,8 @@ import "swiper/css/navigation";
 import { IoIosArrowForward } from "react-icons/io";
 import { IoIosArrowBack } from "react-icons/io";
 import Link from "next/link";
+import useAnimation from "@/app/hooks/useAnimation";
+import { motion } from "framer-motion";
 
 const slides = [
   {
@@ -67,6 +69,7 @@ const slides = [
 ];
 
 const Carousel = () => {
+  const { zoomIn } = useAnimation();
   const prevRef = useRef(null);
   const nextRef = useRef(null);
   const swiperRef = useRef(null);
@@ -102,9 +105,15 @@ const Carousel = () => {
         }}
         className="rounded-lg overflow-hidden"
       >
-        {slides.map((slide) => (
+        {slides.map((slide, index) => (
           <SwiperSlide key={slide.id}>
-            <div className="w-full h-[400px] border rounded-md bg-[#3158C733] p-10 flex flex-col justify-center items-center font-inter">
+            <motion.div
+              variants={zoomIn}
+              initial="hidden"
+              whileInView="visible"
+              custom={index * 0.1}
+              className="w-full h-[400px] border rounded-md bg-[#3158C733] p-10 flex flex-col justify-center items-center font-inter"
+            >
               <img
                 src={slide.image}
                 alt={slide.title}
@@ -132,7 +141,7 @@ const Carousel = () => {
                   </button>
                 </Link>
               </div>
-            </div>
+            </motion.div>
           </SwiperSlide>
         ))}
       </Swiper>

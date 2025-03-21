@@ -63,7 +63,7 @@ const Page = () => {
             <option value="Web Development">Web Development</option>
             <option value="App Development">App Development</option>
             <option value="Digital Marketing">Digital Marketing</option>
-            <option value="UI/UX Design">UI/UX Design</option>
+            <option value="Design">UI/UX Design</option>
             <option value="Video & Animation">Video & Animation</option>
           </select>
         </div>
