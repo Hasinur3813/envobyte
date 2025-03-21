@@ -39,7 +39,7 @@ const Page = () => {
             <h2 className="text-2xl font-bold mt-10">Our Mission</h2>
             <p className="mt-5 leading-7">
               Our mission is to provide high-quality, cost-effective IT services
-              and solutions that meet our customers' needs. We manage to
+              and solutions that meet our customer&apos; needs. We manage to
               maintain a high level of customer satisfaction through our
               dedicated team of professionals.
             </p>
@@ -49,7 +49,7 @@ const Page = () => {
             <p className="mt-5 leading-7">
               Our vision is to become a leading IT company that provides
               high-quality, cost-effective IT services and solutions that meet
-              our customers' needs. We aim to be the preferred choice for
+              our customer&apos;s needs. We aim to be the preferred choice for
               businesses looking for growth-oriented strategies.
             </p>
           </div>
@@ -107,7 +107,7 @@ const Page = () => {
               model, connecting skilled professionals across various regions.
               Our team of designers, developers, marketers, and strategists is
               experienced and can handle various projects. We are committed to
-              exceeding our clients' expectations by providing effective
+              exceeding our clients&apos; expectations by providing effective
               information technology solutions. We emphasize the growth and job
               satisfaction of our employees, creating a supportive environment
               for their development. By merging creativity with technology, we
@@ -165,8 +165,8 @@ const Page = () => {
             As a top IT solutions provider, we are dedicated to your success
             through consistent commitment and innovation. Work with us to
             harness our expertise and enhance your IT and digital presence to
-            new levels. Let's create something exceptional together and achieve
-            your business objectives.
+            new levels. Let&apos;s create something exceptional together and
+            achieve your business objectives.
           </p>
         </div>
       </div>

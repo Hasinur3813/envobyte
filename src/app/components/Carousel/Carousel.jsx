@@ -7,6 +7,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { IoIosArrowForward } from "react-icons/io";
 import { IoIosArrowBack } from "react-icons/io";
+import Link from "next/link";
 
 const slides = [
   {
@@ -114,18 +115,22 @@ const Carousel = () => {
               </h5>
               <p className="text-base text-light">{slide.subtitle}</p>
               <div className="flex flex-col sm:flex-row items-center gap-4 mt-4">
-                <button
-                  type="button"
-                  className="bg-[#0C89FF] px-10 py-3 rounded-full text-sm text-light cursor-pointer w-full sm:w-auto"
-                >
-                  Portfolio
-                </button>
-                <button
-                  type="button"
-                  className="border border-[#0C89FF] px-10 py-3 rounded-full text-sm text-[#0C89FF] cursor-pointer  w-full sm:w-auto"
-                >
-                  Order
-                </button>
+                <Link href={"/portfolio"}>
+                  <button
+                    type="button"
+                    className="bg-[#0C89FF] px-10 py-3 rounded-full text-sm text-light cursor-pointer w-full sm:w-auto"
+                  >
+                    Portfolio
+                  </button>
+                </Link>
+                <Link href={"/pricing"}>
+                  <button
+                    type="button"
+                    className="border border-[#0C89FF] px-10 py-3 rounded-full text-sm text-[#0C89FF] cursor-pointer  w-full sm:w-auto"
+                  >
+                    Order
+                  </button>
+                </Link>
               </div>
             </div>
           </SwiperSlide>

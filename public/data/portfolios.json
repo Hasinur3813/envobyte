@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "title": "Mobile App Development",
+    "subtitle": "Native & Cross-Platform Apps",
+    "description": "Building high-performance mobile applications using Flutter and React Native for both iOS and Android.",
+    "category": "App Development",
+    "image": "/images/Writing.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Web Development",
+    "subtitle": "Modern & Scalable Websites",
+    "description": "Creating responsive and dynamic websites using Next.js, React, and Tailwind CSS for a seamless user experience.",
+    "category": "Web Development",
+    "image": "/images/Billie-mockup.jpg"
+  },
+  {
+    "id": 3,
+    "title": "WordPress Website Development",
+    "subtitle": "Custom & Theme-Based Solutions",
+    "description": "Designing and developing WordPress websites with custom themes and plugins to meet unique business needs.",
+    "category": "Web Development",
+    "image": "/images/Bravaa-Mockup.jpg"
+  },
+  {
+    "id": 4,
+    "title": "E-Commerce Development",
+    "subtitle": "Scalable Online Stores",
+    "description": "Building secure and scalable e-commerce platforms with Shopify, WooCommerce, and custom solutions.",
+    "category": "Web Development",
+    "image": "/images/Maily-mockup.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Custom Web Applications",
+    "subtitle": "Tailor-Made Digital Solutions",
+    "description": "Developing powerful and scalable web applications using MERN stack, tailored to business needs.",
+    "category": "Web Development",
+    "image": "/images/E-learning-mockup.jpg"
+  },
+  {
+    "id": 6,
+    "title": "UI/UX Design",
+    "subtitle": "Engaging & User-Friendly Interfaces",
+    "description": "Creating modern UI/UX designs for web and mobile apps to ensure a smooth and intuitive user experience.",
+    "category": "Design",
+    "image": "/images/Easypaid-mockup.jpg"
+  }
+]
