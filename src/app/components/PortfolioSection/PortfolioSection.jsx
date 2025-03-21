@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import PrimaryButton from "../Buttons/PrimaryButton";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
@@ -70,7 +70,18 @@ const portfolioImages = [
 
 const PortfolioSection = () => {
   const swiperRef = useRef(null);
+  const prevRef = useRef(null);
+  const nextRef = useRef(null);
   const modalRef = useRef(null);
+
+  useEffect(() => {
+    if (swiperRef.current) {
+      swiperRef.current.params.navigation.prevEl = prevRef.current;
+      swiperRef.current.params.navigation.nextEl = nextRef.current;
+      swiperRef.current.navigation.init();
+      swiperRef.current.navigation.update();
+    }
+  }, []);
 
   // Function to pair up images
   const getImagePairs = () => {
@@ -164,6 +175,7 @@ const PortfolioSection = () => {
         {/* Swiper Carousel */}
         <div className="relative w-full">
           <Swiper
+            ref={swiperRef}
             modules={[Navigation, Autoplay]}
             spaceBetween={20}
             slidesPerView={1}
@@ -173,7 +185,9 @@ const PortfolioSection = () => {
             }}
             loop={true}
             autoplay={{ delay: 3000, disableOnInteraction: false }}
-            onSwiper={(swiper) => (swiperRef.current = swiper)}
+            onInit={(swiper) => {
+              swiperRef.current = swiper;
+            }}
             className="portfolio-swiper"
           >
             {getImagePairs().map((image, index) => (
@@ -201,13 +215,13 @@ const PortfolioSection = () => {
           {/* Custom Navigation Arrows */}
           <div className="flex justify-center gap-4 mt-10">
             <button
-              onClick={() => swiperRef.current?.slidePrev()}
+              ref={prevRef}
               className="custom-prev border border-[#0C89FF] rounded-md hover:bg-accent hover:text-light hover:border-accent cursor-pointer  text-[#0C89FF] p-2"
             >
               <IoIosArrowBack size={25} />
             </button>
             <button
-              onClick={() => swiperRef.current?.slideNext()}
+              ref={nextRef}
               className="custom-next border cursor-pointer border-accent rounded-md bg-accent text-light hover:border-accent/50 p-2"
             >
               <IoIosArrowForward size={25} />

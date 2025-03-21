@@ -4,7 +4,7 @@ import { IoMdClose } from "react-icons/io";
 const PortfolioModal = ({ selectedImage, closeModal, modalRef }) => {
   return (
     <div
-      className="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-50 p-20"
+      className="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-50 p-2 lg:p-20"
       onClick={closeModal} // Close modal on overlay click
     >
       {/* modal close button */}
@@ -17,7 +17,7 @@ const PortfolioModal = ({ selectedImage, closeModal, modalRef }) => {
 
       <div
         ref={modalRef}
-        className=" bg-light p-6 rounded-lg max-w-7xl w-full mx-auto"
+        className=" bg-light p-2 lg:p-6 rounded-lg max-w-7xl w-full mx-auto"
       >
         {/* main container */}
         <div className="flex flex-col items-center">

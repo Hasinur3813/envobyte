@@ -89,7 +89,7 @@ const Carousel = () => {
         modules={[Navigation, Autoplay]}
         spaceBetween={20}
         slidesPerView={1}
-        // autoplay={{ delay: 3000, disableOnInteraction: false }}
+        autoplay={{ delay: 3000, disableOnInteraction: false }}
         loop={true}
         navigation={{ prevEl: prevRef.current, nextEl: nextRef.current }}
         onInit={(swiper) => {

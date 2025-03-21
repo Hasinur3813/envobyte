@@ -8,8 +8,8 @@ const MobileMenu = ({ visibleMenu }) => {
   return (
     <div
       className={` w-full h-0 ${
-        visibleMenu && "h-56"
-      } transition-all duration-300 overflow-hidden bg-primary rounded-md z-10 `}
+        visibleMenu && "h-64"
+      } transition-all duration-300 overflow-hidden bg-primary rounded-md z-50`}
     >
       <ul className=" flex flex-col justify-center items-start leading-snug gap-2 font-inter">
         <li>

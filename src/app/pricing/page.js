@@ -50,8 +50,8 @@ const pricingPlans = [
 
 const page = () => {
   return (
-    <section className="bg-[url('/images/salesPricing1.jpg')] min-h-screen bg-cover bg-center bg-no-repeat">
-      <div className="container mx-auto py-16 px-4">
+    <section className="bg-[url('/images/salesPricing1.jpg')] min-h-screen bg-cover bg-center bg-no-repeat py-20 ">
+      <div className="container mx-auto px-4">
         <h2 className="text-center text-light text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-10">
           Friendly Pricing Plans
         </h2>

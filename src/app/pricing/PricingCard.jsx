@@ -49,7 +49,6 @@ const PricingCard = ({ plan }) => {
         ))}
       </div>
 
-      {/* Button - Stays at the Bottom */}
       <button
         onClick={() =>
           toast.success("You have successfully purchased the plan.")
